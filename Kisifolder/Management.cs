@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,14 +71,14 @@ namespace Kisifolder
             Console.Write("Please input the second persons age.");
             do
             {
-                
+
                 Console.WriteLine("Please enter an integer value:");
-                var inputs= CheckInput();
+                var inputs = CheckInput();
                 controlVar = inputs.Item1;
                 userInput = inputs.Item2;
-            
-            }          
-            
+
+            }
+
             while (controlVar == false);
             kisi2.age = Convert.ToInt32(userInput);
 
@@ -109,9 +110,10 @@ namespace Kisifolder
             while (true)
             {
 
-                Console.WriteLine("Did " + kisi2.name + " went to any other schools:");
+                Console.Write("Did " + kisi2.name + " went to any other schools.");
+                Console.WriteLine("Y or N:");
                 string userInput = Console.ReadLine();
-                if (userInput != "No")
+                if (AnswerControl(userInput))
                 {
 
                     OtherSchoolsWent(); //sonraki okul yazışları
@@ -146,9 +148,10 @@ namespace Kisifolder
             while (true)
             {
 
-                Console.WriteLine("Does " + kisi2.name + " have any other favorite foods:");
+                Console.Write("Does " + kisi2.name + " have any other favorite foods.");
+                Console.WriteLine("Y or N:");
                 string userInput = Console.ReadLine();
-                if (userInput != "No")
+                if (AnswerControl(userInput))
                 {
 
                     OtherFavoriteFood();
@@ -250,24 +253,105 @@ namespace Kisifolder
 
         }
 
-        public (Boolean,string) CheckInput()
+        public (Boolean, string) CheckInput()
         {
             string userInput = Console.ReadLine();
             try
             {
 
                 Convert.ToInt32(userInput);
-                return (true,userInput);
+                return (true, userInput);
 
             }
             catch (Exception nonIntValue)
             {
-                
-                return (false,userInput);
+
+                return (false, userInput);
 
             }
 
         }
-    }
+        public Boolean AnswerControl(string answer){
 
+            Boolean pAnswers = pozitiveAnswers(answer);
+            Boolean nAnswers = negativeAnswers(answer);
+
+            if (pAnswers == true)
+            {
+
+                return true;
+
+            }
+
+            else if (nAnswers == true)
+            {
+
+                return false;
+
+            }
+
+            else
+            {
+
+                Console.WriteLine("That answer is not acceptable, please answer with a yes or no:");
+                string userAnswer = Console.ReadLine();
+                return AnswerControl(userAnswer);
+            
+            }
+    
+        } 
+        
+
+        public Boolean pozitiveAnswers(string answer)
+        {
+
+            List<string> pozitiveAnswers = new List<string>();
+            pozitiveAnswers.Add("Yes");
+            pozitiveAnswers.Add("Y");
+            pozitiveAnswers.Add("YES");
+            pozitiveAnswers.Add("YEs");
+            pozitiveAnswers.Add("YeS");
+            pozitiveAnswers.Add("yES");
+            pozitiveAnswers.Add("yEs");
+            pozitiveAnswers.Add("yeS");
+            pozitiveAnswers.Add("yes");
+
+            if (pozitiveAnswers.Contains(answer) == true)
+            {
+
+                return true;
+
+            }
+            else
+            {
+
+                return false;
+
+            }
+
+        }
+
+        public Boolean negativeAnswers(string answer)
+        {
+
+            List<string> negativeAnswers = new List<string>();
+            negativeAnswers.Add("No");
+            negativeAnswers.Add("N");
+            negativeAnswers.Add("NO");
+            negativeAnswers.Add("no");
+            negativeAnswers.Add("nO");
+
+            if (negativeAnswers.Contains(answer) == true)
+            {
+
+                return true;
+
+            }
+            else
+
+                return false;
+        }
+
+
+    }
 }

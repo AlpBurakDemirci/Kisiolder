@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdd2\\source\\repos\\Kisifolder\\Kisifolder\\Kisifolder.csproj": {}
+    "C:\\Users\\abdd2\\Source\\Repos\\AlpBurakDemirci\\Kisiolder\\Kisifolder\\Kisifolder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdd2\\source\\repos\\Kisifolder\\Kisifolder\\Kisifolder.csproj": {
+    "C:\\Users\\abdd2\\Source\\Repos\\AlpBurakDemirci\\Kisiolder\\Kisifolder\\Kisifolder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdd2\\source\\repos\\Kisifolder\\Kisifolder\\Kisifolder.csproj",
+        "projectUniqueName": "C:\\Users\\abdd2\\Source\\Repos\\AlpBurakDemirci\\Kisiolder\\Kisifolder\\Kisifolder.csproj",
         "projectName": "Kisifolder",
-        "projectPath": "C:\\Users\\abdd2\\source\\repos\\Kisifolder\\Kisifolder\\Kisifolder.csproj",
+        "projectPath": "C:\\Users\\abdd2\\Source\\Repos\\AlpBurakDemirci\\Kisiolder\\Kisifolder\\Kisifolder.csproj",
         "packagesPath": "C:\\Users\\abdd2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdd2\\source\\repos\\Kisifolder\\Kisifolder\\obj\\",
+        "outputPath": "C:\\Users\\abdd2\\Source\\Repos\\AlpBurakDemirci\\Kisiolder\\Kisifolder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
