@@ -1,0 +1,14 @@
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.AssemblyInfoInputs.cache
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.AssemblyInfo.cs
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.csproj.CoreCompileInputs.cache
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\bin\Debug\net6.0\Kisifolder.exe
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\bin\Debug\net6.0\Kisifolder.deps.json
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\bin\Debug\net6.0\Kisifolder.runtimeconfig.json
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\bin\Debug\net6.0\Kisifolder.dll
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\bin\Debug\net6.0\Kisifolder.pdb
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.dll
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\refint\Kisifolder.dll
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.pdb
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\Kisifolder.genruntimeconfig.cache
+C:\Users\abdd2\source\repos\Kisifolder\Kisifolder\obj\Debug\net6.0\ref\Kisifolder.dll
